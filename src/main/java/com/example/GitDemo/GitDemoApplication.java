@@ -11,6 +11,8 @@ public class GitDemoApplication {
 
 		ConfigurableApplicationContext run =  SpringApplication.run(GitDemoApplication.class, args);
 		// changes for HIS-134
+
+		int a = 10;
 		 run.close();
 	}
 
