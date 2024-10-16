@@ -6,7 +6,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class GitDemoApplication {
+private Map<String,Object> cache = new HashMap<String, Object>();
 	private static final String REST_URL="https://www.equifax.com/getScores/";
+
 
 	public static void main(String[] args) {
 
@@ -17,5 +19,10 @@ public class GitDemoApplication {
 		int a = 10;
 		 run.close();
 	}
+	//HIS-301 changes
+ 	public void loadDataToCache(){
+	//logic
+
+}
 
 }
